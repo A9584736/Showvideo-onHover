@@ -1,0 +1,98 @@
+@font-face {
+    font-family: Silk Serif;
+    src: url(/fonts/silkserif-regularitalic-webfont.ttf);
+}
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Silk Serif;
+    font-weight: 300;
+    background: #000;
+    color: #fff;
+}
+html, 
+body{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.container{
+    cursor: crosshair;
+    width: 100%;
+    height: 100vh;
+    padding: 2rem 10rem;
+    
+    
+    .home-container{
+        border-bottom: 1px solid;
+        overflow: hidden;
+        display: flex;
+    }
+    h4{
+        width: 100%;
+        font-size: 5rem;
+    }
+    span{
+        font-family: Silk Serif;
+        font-size: 1.5rem;
+        margin-top: 1rem;
+        margin-right: 1rem;
+    }
+    img,
+    video{
+        width: 200px;
+        mix-blend-mode: difference;
+        height: 250px;
+        object-fit: cover;
+        position: absolute;
+        transform: translate(-50%,-50%);
+        opacity: 0;
+        pointer-events: none;
+        /* transition: all linear .5s; */
+    }
+
+}
+
+
+
+  /* small-devices */
+@media (width <= 600px) {
+    .container{
+        margin-top: 5vh;
+        padding: 5vh 5vh;
+    }
+
+    .home-container{
+        width: 100%;
+        height: 20vh;
+        align-items: center;
+
+        span{
+            font-size: 1rem;
+            align-self: flex-start;
+        }
+    }
+
+    .home-container h4{
+        font-size: 5rem;
+        
+    }
+    
+}
+
+    /* medium-devices */
+  @media (width <= 776px) {
+
+      .container{
+        padding: 0 5vh;
+    }
+    .home-container h4{
+        font-size: 3.5rem;
+        
+    }
+    
+  }
